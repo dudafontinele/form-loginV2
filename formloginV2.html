@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulário</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='login.css'>
+</head>
+ 
+<body>
+    <h1>Entre</h1>
+    <form class="login-form" action="" onsubmit="return validalogin()">
+        <div>
+            <p>
+                <label for="username">Nome de Usuário</label><br>
+                <input type="text" id="username">
+                <span class="error" id="username-error">*Obrigatório</span>
+            </p>
+            <p>
+                <label for="password">Senha</label><br>
+                <input type="password" id="senha">
+                <span class="error" id="password-error">*Obrigatório</span>
+            </p>
+       
+            <button type="button" onclick="validaLogin()">ENTRE</button> <br>
+
+            <nav id="Esqueci minha senha"></nav>
+            <ul>
+            <a href="redefinir.html">Esqueci minha senha</a>
+            </ul>
+            <nav id="Novo no site? Cadastre-se"></nav>
+            <ul>
+            <a href="cadastre-se.html">Novo no site? Cadastre-se</a>
+            </ul>
+        </div>
+    </form>
+
+    <script src='login.js'></script>
+</body>
+ 
+</html>
